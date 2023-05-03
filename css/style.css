@@ -1,0 +1,113 @@
+body {
+    background-color: #F1F5F8;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    background-color: #C59F62;
+    bottom: 0px;
+    left: calc(50% - 45px);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    color: #C59F62;
+    margin: 0px 5px;
+    border: 1px solid #C59F62;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+button:active {
+    background-color: #FFF;
+}
+
+.main {
+
+    max-width: 1300px;
+    width: 95%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    justify-content: center;
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+}
+
+.clothe {
+    display: flex;
+    flex-direction: row;
+}
+
+.clothePicture img {
+    border: 3px solid #C59F62;
+    border-radius: 10px;
+}
+
+.clotheInfos {
+    margin-left: 8px;
+}
+
+.clotheNameAndPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #000
+}
+
+.clotheName {
+    font-weight: 600;
+}
+
+.clothePrice {
+    font-weight: 600;
+    color: #C59F62;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .main {
+        margin-top: 25px;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-row-gap: 30px;
+    }
+
+    .clothe {
+        flex-direction: column;
+    }
+
+    .clotheInfos {
+        margin-top: 8px;
+    }
+}
