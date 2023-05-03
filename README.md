@@ -8,4 +8,4 @@ A product page with buttons to filter products by category
 
 ## Mobile view
 
-![Mobile view](./img/mobile.jpg)
+![Mobile view](./img/mobile.jpeg)
