@@ -1,6 +1,6 @@
 # Products Page
 
-A product page with buttons to filter products by category
+A new version of [product page](https://github.com/jakfils/Products-Page) made with .map() method
 
 ## Desktop view
 
